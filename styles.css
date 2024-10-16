@@ -8,52 +8,68 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #F9F9F9; /* Light background */
-    color: #333333; /* Dark text */
+    background-color: #F9F9F9;
+    /* Light background */
+    color: #333333;
+    /* Dark text */
 }
 
 /* Navigation Styles */
+.nav-container .brand-logo {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Yesteryear", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.nav-wrapper {
+    background-color: #E4E4E4;
+    align-items: center;
+    height: 8vh;
+    margin: auto;
+}
+
 .nav-container {
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #E4E4E4;
-    padding: 1rem;
-    position: relative;
+    height: 8vh;
+    width: 70vw;
+    margin: auto;
 }
 
-.brand-logo {
+.nav-container ul li {
+    display: inline;
+}
+
+.nav-container a {
+    font-size: .95em;
     color: #000000;
-    font-size: 24px;
+    margin-left: 30px;
     text-decoration: none;
-    font-weight: bold;
-    margin: 0 37vh;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    margin-right: 36vh;
+.nav-container a:hover {
+    color: #E67E22;
 }
 
-nav ul li {
-    margin: 0 15px;
+.hamburger {
+    display: none;
 }
 
-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
-
-nav ul li a:hover {
-    color: #FF9800; /* Accent orange */
-}
-
-
-
-
 
 /* HERO SECTION (HOME PAGE) */
 .hero-section {
@@ -70,7 +86,7 @@ nav ul li a:hover {
 .hero-content h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333333; /* Dark text */
+    color: #333333;
 }
 
 .hero-content p {
@@ -89,7 +105,8 @@ nav ul li a:hover {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #061EFB; /* Primary green */
+    background-color: #061EFB;
+    /* Primary green */
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -97,11 +114,13 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #3746d0; /* Accent orange */
+    background-color: #3746d0;
+    /* Accent orange */
 }
 
 .btn-secondary {
-    background-color: #FF9800; /* Secondary orange */
+    background-color: #FF9800;
+    /* Secondary orange */
 }
 
 .btn-secondary:hover {
@@ -112,10 +131,11 @@ nav ul li a:hover {
 .container {
     margin: 20px auto;
     padding: 20px;
-    max-width: 960px;
+    width: 70vw;
+    /* flex-wrap: wrap; */
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -215,7 +235,7 @@ h2 {
     color: #333333;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     padding: 10px;
     border: 1px solid #ccc;
@@ -227,7 +247,8 @@ h2 {
 
 .contact-form button {
     padding: 10px;
-    background-color: #061EFB; /* Primary green */
+    background-color: #061EFB;
+    /* Primary green */
     color: white;
     border: none;
     border-radius: 4px;
@@ -236,7 +257,8 @@ h2 {
 }
 
 .contact-form button:hover {
-    background-color: #2b3bc8; /* Accent orange */
+    background-color: #2b3bc8;
+    /* Accent orange */
 }
 
 .contact-map h2 {
@@ -251,7 +273,7 @@ h2 {
 
 /* Footer Styling */
 footer {
-    background-color: #E4E4E4; /* Dark footer background */
+    background-color: #E4E4E4;
     color: #60636D;
     padding: 40px 0;
     text-align: center;
@@ -261,19 +283,25 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    width: 80vw;
+    /* max-width: 1200px; */
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 10px; */
 }
 
-.footer-links, .footer-social, .footer-contact {
+.footer-links,
+.footer-social,
+.footer-contact {
     margin-bottom: 20px;
 }
 
-.footer-links h3, .footer-social h3, .footer-contact h3 {
+.footer-links h3,
+.footer-social h3,
+.footer-contact h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #60636D; /* Accent color for headers */
+    color: #60636D;
+    /* Accent color for headers */
 }
 
 .footer-links ul {
@@ -291,7 +319,8 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color: #FF9800; /* Accent color on hover */
+    color: #FF9800;
+    /* Accent color on hover */
 }
 
 /* Social Media Icons */
@@ -313,7 +342,8 @@ footer {
 }
 
 .social-icons li a img:hover {
-    transform: scale(1.2); /* Slight zoom on hover */
+    transform: scale(1.2);
+    /* Slight zoom on hover */
 }
 
 /* Contact Info */
@@ -341,15 +371,65 @@ footer {
 }
 
 
-
-
-
 /* Responsive Design - Media Queries */
 @media (max-width: 768px) {
+
+    .nav-container ul li {
+        display: block;
+    }
+
+    /* .main-nav {
+        overflow: hidden;
+    } */
+
+    .nav-links {
+        background-color: #E4E4E4;
+        box-sizing: border-box;
+        position: absolute;
+        top: -110%;
+        left: 0;
+        width: 100%;
+        height: 16vh;
+        text-align: left;
+        transition: 0.3s;
+    }
+
+    .nav-links.active {
+        z-index: 10;
+        top: 8vh;
+        padding-left: 15vw;
+        margin: 0;
+    }
+
+    .nav-links.active li {
+        margin-top: 14px;
+    }
+
+    .nav-links.active li a {
+        margin: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -386,17 +466,20 @@ footer {
     .project-item p {
         font-size: 14px;
     }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-links, .footer-social, .footer-contact {
+    .footer-links,
+    .footer-social,
+    .footer-contact {
         margin-bottom: 30px;
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     nav ul {
         flex-direction: column;
     }
@@ -420,4 +503,4 @@ footer {
     footer p {
         font-size: 14px;
     }
-}
+} */
