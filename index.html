@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <header>
         <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <a href="#" class="brand-logo">My Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -24,7 +29,8 @@
             <div class="hero-content">
                 <h1>Hi, I'm Yewantraj Karki.</h1>
                 <p>A Front-End Developer & UX Enthusiast</p>
-                <p>I build interactive and responsive websites with modern technologies. Let's create something amazing together!</p>
+                <p>I build interactive and responsive websites with modern technologies. Let's create something amazing
+                    together!</p>
                 <a href="projects.html" class="btn">View My Work</a>
                 <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
             </div>
@@ -36,22 +42,62 @@
         <!-- Brief Introduction Section -->
         <section id="about" class="container">
             <h2>About Me</h2>
-            <p>I’m a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I specialize in creating clean, modern websites with great user experience.</p>
-            <p>With a background in front-end development, I have experience working on both personal and professional projects, and I’m always eager to learn new technologies and improve my skills.</p>
+            <p>I’m a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I specialize in
+                creating clean, modern websites with great user experience.</p>
+            <p>With a background in front-end development, I have experience working on both personal and professional
+                projects, and I’m always eager to learn new technologies and improve my skills.</p>
         </section>
 
         <!-- Call to Action Section -->
         <section id="cta" class="container cta-section">
             <h2>Want to collaborate on a project?</h2>
-            <p>Feel free to reach out to me for freelance opportunities, web development work, or just to connect and discuss ideas.</p>
+            <p>Feel free to reach out to me for freelance opportunities, web development work, or just to connect and
+                discuss ideas.</p>
             <a href="contact.html" class="btn btn-primary">Contact Me</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Yewantraj Karki. All Rights Reserved.</p>
+        <div class="footer-container">
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <ul class="social-icons">
+                    <li><a href="https://twitter.com/" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
+                    </li>
+                    <li><a href="https://linkedin.com/" target="_blank"><img src="/images/linkedin.png"
+                                alt="LinkedIn"></a></li>
+                    <li><a href="https://github.com/yewantraj" target="_blank"><img src="/images/github.png"
+                                alt="GitHub"></a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:yewantraj.karki@georgebrown.ca">101571636@georgebrown.ca</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Yewantraj Karki. All Rights Reserved.</p>
+        </div>
     </footer>
+
 
     <script src="scripts.js"></script>
 </body>
+
 </html>

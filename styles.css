@@ -12,17 +12,29 @@ body {
     color: #333333; /* Dark text */
 }
 
-header {
-    background-color: #4CAF50; /* Primary green */
-    color: white;
+/* Navigation Styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E4E4E4;
     padding: 1rem;
-    text-align: center;
+    position: relative;
+}
+
+.brand-logo {
+    color: #000000;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 37vh;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    margin-right: 36vh;
 }
 
 nav ul li {
@@ -30,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
 }
@@ -38,6 +50,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #FF9800; /* Accent orange */
 }
+
+
+
+
 
 /* HERO SECTION (HOME PAGE) */
 .hero-section {
@@ -73,7 +89,7 @@ nav ul li a:hover {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #4CAF50; /* Primary green */
+    background-color: #061EFB; /* Primary green */
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -81,7 +97,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #FF9800; /* Accent orange */
+    background-color: #3746d0; /* Accent orange */
 }
 
 .btn-secondary {
@@ -148,7 +164,7 @@ h2 {
 
 .project-item h2 {
     font-size: 24px;
-    color: #4CAF50;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -211,7 +227,7 @@ h2 {
 
 .contact-form button {
     padding: 10px;
-    background-color: #4CAF50; /* Primary green */
+    background-color: #061EFB; /* Primary green */
     color: white;
     border: none;
     border-radius: 4px;
@@ -220,7 +236,7 @@ h2 {
 }
 
 .contact-form button:hover {
-    background-color: #FF9800; /* Accent orange */
+    background-color: #2b3bc8; /* Accent orange */
 }
 
 .contact-map h2 {
@@ -233,19 +249,100 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* FOOTER */
+/* Footer Styling */
 footer {
+    background-color: #E4E4E4; /* Dark footer background */
+    color: #60636D;
+    padding: 40px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #2C3E50; /* Dark blue-gray for footer */
-    color: white;
-    margin-top: 20px;
 }
 
-footer p {
-    margin: 0;
-    font-size: 16px;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+.footer-links, .footer-social, .footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-links h3, .footer-social h3, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #60636D; /* Accent color for headers */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: #60636D;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #FF9800; /* Accent color on hover */
+}
+
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons li a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons li a img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Contact Info */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact p a {
+    color: #60636D;
+    text-decoration: none;
+}
+
+.footer-contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: 10px 0;
+    color: #60636D;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+
 
 /* Responsive Design - Media Queries */
 @media (max-width: 768px) {
@@ -288,6 +385,14 @@ footer p {
 
     .project-item p {
         font-size: 14px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links, .footer-social, .footer-contact {
+        margin-bottom: 30px;
     }
 }
 
