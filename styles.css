@@ -335,15 +335,15 @@ footer {
     margin: 0 10px;
 }
 
-.social-icons li a img {
-    width: 24px;
-    height: 24px;
+.social-icons li a i {
+    /* width: 30px;
+    height: 30px; */
     transition: transform 0.3s ease;
 }
 
-.social-icons li a img:hover {
+.social-icons li a i:hover {
     transform: scale(1.2);
-    /* Slight zoom on hover */
+
 }
 
 /* Contact Info */
