@@ -19,7 +19,7 @@ body {
     color: #000000;
     text-decoration: none;
     font-family: "Yesteryear", cursive;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-style: normal;
     font-size: 24px;
 }
@@ -46,7 +46,7 @@ body {
     display: inline;
 }
 
-.nav-container a {
+.nav-links a {
     font-size: .95em;
     color: #000000;
     margin-left: 30px;
@@ -129,8 +129,8 @@ body {
 
 /* ABOUT SECTION */
 .container {
-    margin: 20px auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 30px;
     width: 70vw;
     /* flex-wrap: wrap; */
     background: white;
@@ -276,14 +276,14 @@ footer {
     background-color: #E4E4E4;
     color: #60636D;
     padding: 40px 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 70vw;
     /* max-width: 1200px; */
     margin: 0 auto;
     /* padding: 10px; */
@@ -368,11 +368,20 @@ footer {
 
 .footer-bottom p {
     margin: 0;
+    text-align: center;
 }
 
 
 /* Responsive Design - Media Queries */
 @media (max-width: 768px) {
+
+    .nav-container {
+        width: 90vw;
+    }
+
+    .container {
+        width: 90vw;
+    }
 
     .nav-container ul li {
         display: block;
@@ -456,7 +465,8 @@ footer {
     }
 
     .project-item img {
-        height: 150px;
+        /* height: 150px; */
+        object-fit: cover;
     }
 
     .project-item h2 {
@@ -465,6 +475,10 @@ footer {
 
     .project-item p {
         font-size: 14px;
+    }
+
+    footer {
+        text-align: center;
     }
 
     .footer-container {
